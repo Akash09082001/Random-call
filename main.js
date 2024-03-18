@@ -11,15 +11,10 @@ function makeCall() {
         var selectedNumber = mobileNumbers[randomIndex];
 
         // Call the function to make the call using the selected number
-        callNumber(selectedNumber);
+        document.getElementById("callNowButton").href = "tel:" + selectedNumber;
     } else {
         // If the current time is outside the allowed hours, disable the button
-        document.getElementById("callNowButton").disabled = true;
+        document.getElementById("callNowButton").removeAttribute("href");
         alert("Sorry, the call service is only available between 9am and 7pm.");
     }
-}
-
-function callNumber(number) {
-    // Replace this alert with your actual code to make the call using the selected number
-    alert("Calling number: " + number);
 }
