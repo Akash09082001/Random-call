@@ -11,7 +11,8 @@ function makeCall() {
         var selectedNumber = mobileNumbers[randomIndex];
 
         // Call the function to make the call using the selected number
-        document.getElementById("callNowButton").href = "tel:" + selectedNumber;
+        const call = document.getElementById("callNowButton").href = "tel:" + selectedNumber;
+        console.log(call);
     } else {
         // If the current time is outside the allowed hours, disable the button
         document.getElementById("callNowButton").removeAttribute("href");
