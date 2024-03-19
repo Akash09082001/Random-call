@@ -45,7 +45,7 @@ callNowButton.addEventListener('click', async function makeCall() {
             const call = "tel:+91 " + selectedNumber;
             window.location.href = call; // Directly initiating the call instead of assigning href
         } else {
-            document.getElementById("callNowButton").removeAttribute("href");
+            callNowButton.removeAttribute("href");
             callPopup();
         }
 
