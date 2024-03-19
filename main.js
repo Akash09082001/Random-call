@@ -20,7 +20,7 @@ callNowButton.addEventListener('click', function makeCall() {
     var currentMinute = currentTime.getMinutes();
 
     // Convert 9:30 am to minutes
-    var startHour = 9;
+    var startHour = 12;
     var startMinute = 30;
     var startTotalMinutes = startHour * 60 + startMinute;
 
